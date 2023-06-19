@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;	
+}
+
+.limit {
+	width: 1200px;
+}
+
+.main {
+	border: 2px solid black;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.header {
+	position: relative;
+	height: 80px;
+	width: 100%;
+	border: 2px solid pink;
+}
+
+.main>.header>.nickname {
+	position: absolute;
+	border: 2px solid red;
+	height: 30px;
+	width: 120px;
+	left: 30px;
+	top: 40%;
+}
+
+.logout {
+	position: absolute;
+	right: 40px;
+	top: 40%;
+}
+
+.main>.body {
+	position: relative;
+	margin-top: 0;
+	border: 2px solid green;
+	width: 100%;
+	height: 130px;
+}
+
+.body>.logo {
+	position: absolute;
+	width: 60px;
+	height: 30px;
+	left: 20px;
+	top: 40%;
+	border: 2px solid goldenrod;
+}
+
+.btn>.mypage {
+	width: 30px;
+	height: 30px;
+	border: 2px solid black;
+}
+
+.btn>.basket {
+	width: 30px;
+	height: 30px;
+	border: 2px solid black;
+}
+
+.btn {
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	right: 30%;
+	top: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.body>.search-wrap {
+	position: absolute;
+	display: flex;
+	width: 420px;
+	right: 40%;
+	top: 35%;
+	justify-content: space-between;
+}
+
+.search-wrap>#category {
+	width: 90px;
+}
+
+.search-wrap>#search {
+	width: 300px;
+	height: 40px;
+	border-radius: 10px;
+}
+
+.frame>.side-banner {
+	position: fixed;
+	border: 2px solid red;
+	height: 450px;
+	width: 180px;
+	top: 170px;
+	right: 70px;
+}
+
+.main>.nav {
+	position: absolute;
+	display: flex;
+	width: 420px;
+	height: 50px;
+	left: 40%;
+	margin-top: 30px;
+	justify-content: space-between;
+	border: 2px solid blue;
+}
+
+.carousel-wrapper {
+	margin-left:auto;
+	margin-right:auto;
+ 	width: 1200px;
+ 	height: 600px;
+ 	overflow: hidden;
+}
+
+.carousel{
+	display: flex;
+	transition: transform 0.2s;
+}
